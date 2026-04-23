@@ -1,10 +1,11 @@
 package ec.edu.utpl.carreras.computacion.proava;
 
-public class TimerTask {
+public class TimerTask extends  Thread{
     private final String name;
     private int seconds;
 
     public TimerTask(String name, int seconds) {
+        super(name);
         this.name = name;
         this.seconds = seconds;
     }
